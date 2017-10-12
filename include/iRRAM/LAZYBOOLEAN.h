@@ -28,6 +28,8 @@ MA 02111-1307, USA.
 #ifndef iRRAM_LAZYBOOLEAN_H
 #define iRRAM_LAZYBOOLEAN_H
 
+#include <vector>
+
 namespace iRRAM {
 
 class LAZY_BOOLEAN
@@ -50,6 +52,7 @@ friend int choose(const LAZY_BOOLEAN& x1,
                   const LAZY_BOOLEAN& x4,
                   const LAZY_BOOLEAN& x5,
                   const LAZY_BOOLEAN& x6 );
+friend int choose(const std::vector<LAZY_BOOLEAN>& x);
 
 operator bool() const;
 friend int check (const LAZY_BOOLEAN& x);
